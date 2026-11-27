@@ -6,7 +6,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 
 # Bloquear acceso a archivos sensibles
-<FilesMatch "^(config\.php|config\.example\.php|.*\.sql|.*\.md)$">
+<FilesMatch "^(config\.php|config\.example\.php|db\.php|_auth\.php|.*\.sql|.*\.md)$">
   Require all denied
 </FilesMatch>
 RedirectMatch 404 /\.git

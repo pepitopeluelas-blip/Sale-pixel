@@ -12,22 +12,22 @@ Objetivo: llenar la tabla `prospectos` con negocios que necesitan página web o 
 
 ## 2. Elige nichos (no le vendas a "todos")
 
-Tu portafolio ya te da autoridad en estos giros. Ataca primero donde ya tienes casos:
+Tu portafolio ya te da autoridad en estos giros. Ataca primero donde ya tienes casos (enlázalos: corporativomareka.com.mx, narvaza.com.mx, catemtultitlam.com.mx):
 
 | Nicho | Qué les vendes | Gancho |
 |---|---|---|
 | **Transporte y logística** (Narvaza, ISL) | Web corporativa + cotizador + rastreo/flotillas | "Tus clientes corporativos te buscan en Google antes de llamarte" |
 | **Restaurantes, cafeterías, taquerías** | Menú digital WhatsApp + punto de venta | "Recibe pedidos por WhatsApp sin pagar comisión a apps" |
 | **Tiendas de cómputo / retail** (Compushop) | Catálogo en línea + POS + inventario | "Controla tu inventario y vende en línea" |
-| **Industria / distribuidores** (Grasas y Madrina JM) | Catálogo mayorista + pedidos | "Tus distribuidores piden desde el celular" |
+| **Grúas, arrastre y madrinas** (Grúas y Madrinas JM) | Web con botón de emergencia a WhatsApp + Google Maps | "Cuando alguien se queda tirado, busca grúa en Google: que te encuentre a ti" |
 | **Sindicatos, asociaciones, gobierno local** (CATEM Tultitlán) | Sitio informativo + portal de agremiados | "Comunica y organiza a tu gente" |
-| **Grupos empresariales** (Corporativo Mateka → Mareka, ISL) | Portal corporativo multi-empresa | "Una sola imagen para todas tus empresas" |
+| **Grupos empresariales** (Corporativo Mareka → Mareka, ISL) | Portal corporativo multi-empresa | "Una sola imagen para todas tus empresas" |
 
 ## 3. Las 3 bases (semana 1)
 
 1. **Perfil de Empresa en Google (Google Business Profile)** — gratis y es lo que más clientes locales trae.
    - Categoría: "Diseñador de sitios web". Agrega servicios, fotos de proyectos y horario.
-   - Pide **reseñas** a cada cliente que ya atendiste (Narvaza, Compushop, etc.). Mándales el enlace directo por WhatsApp.
+   - Pide **reseñas** a cada cliente que ya atendiste (Narvaza, Corporativo Mareka, CATEM, Compushop, Grúas y Madrinas JM). Mándales el enlace directo por WhatsApp.
 2. **WhatsApp Business** — catálogo con tus paquetes, respuestas rápidas, mensaje de bienvenida y etiquetas (Nuevo, Cotizado, Cliente).
 3. **Analítica** — instala Google Analytics 4 y el Pixel de Meta en la web para medir de dónde llegan los prospectos.
 
@@ -54,7 +54,7 @@ Cierra siempre con una acción: *"Escríbeme 'WEB' por WhatsApp y te hago un dia
 ## 6. Prospección directa (gratis y muy efectiva)
 
 - **Google Maps**: busca negocios de tu zona **sin sitio web** o con web vieja. Escríbeles o visítalos con una propuesta concreta (puedes llevar un prototipo de su página ya hecho: impresiona y cierra mucho más).
-- **LinkedIn**: conecta con gerentes de empresas de transporte, industria y corporativos. Comparte tus casos de Narvaza, ISL y Mateka.
+- **LinkedIn**: conecta con gerentes de empresas de transporte, industria y corporativos. Comparte tus casos de Narvaza, ISL y Corporativo Mareka.
 - **Grupos de Facebook** de emprendedores de tu municipio: aporta consejos, no solo publicidad.
 - **Cámaras y asociaciones** (CANACO, CANIRAC, parques industriales, sindicatos): ofrece una plática gratuita de "Cómo vender por internet".
 
@@ -65,13 +65,28 @@ Cierra siempre con una acción: *"Escríbeme 'WEB' por WhatsApp y te hago un dia
 - **Venta cruzada**: al que tiene web, véndele el sistema (POS, menú, inventario); al que tiene sistema, véndele la web.
 - **Firma en el footer** de los sitios que haces: "Desarrollado por Safe Pixel" con enlace (con permiso del cliente). También ayuda a tu SEO.
 
-## 8. Paquetes (pon precio claro, convierte más)
+## 8. Paquetes y precios (ya publicados en la web, sección #precios)
 
-Define 3 niveles para que el cliente elija y no compare solo precio:
+| Paquete | Precio | Referencia |
+|---|---|---|
+| Landing Page | $3,500 | Campañas y negocios que inician |
+| **Web Corporativa** | **$7,900** | Tipo Narvaza / CATEM Tultitlán (incluye 1 año de hosting + dominio) |
+| Corporativo Multi-empresa | $14,900 | Tipo Corporativo Mareka con sub-sitios de Mareka e ISL |
+| Tienda en Línea | $16,900 | Catálogo + carrito + pagos |
+| Menú Digital WhatsApp | $4,500 | Restaurantes |
+| Punto de Venta | $12,500 | Tiendas, refaccionarias, restaurantes |
+| Sistema a la Medida | desde $18,000 | Flotillas, CRM, citas |
+| Hosting Básico / Negocio | $1,500 / $2,400 al año | Negocio incluye dominio .com.mx y correos |
+| Mantenimiento | $650 al mes | Ingreso recurrente: ofrécelo a TODOS |
 
-- **Básico** — Landing page + botón de WhatsApp + dominio y hosting 1 año.
-- **Negocio** (el que más quieres vender) — Web de 5 secciones + Google Business + SEO básico + correos.
-- **Pro / Sistema** — Web + punto de venta o menú digital + panel de administración + soporte.
+Técnica de venta: el paquete del centro ("Más elegido") es el que quieres vender; los extremos sirven de referencia.
+Precios en MXN + IVA si piden factura. Ajústalos en `index.html` (sección `id="precios"`).
+
+**Ingreso recurrente:** si cada cliente paga hosting ($2,400/año) + mantenimiento ($650/mes), 20 clientes = ~$204,000 MXN al año solo en recurrentes.
+
+## Video publicitario
+
+`marketing/video/safe-pixel-promo.mp4` (vertical 1080×1920, para Reels, TikTok, Shorts y Estados de WhatsApp). Súbelo **sin música** y agrega un audio en tendencia desde la app: así el algoritmo lo empuja más. Úsalo también como anuncio en Meta Ads con objetivo "Mensajes".
 
 ## 9. Embudo y seguimiento
 

@@ -5,8 +5,8 @@
 /* ⚙️ CONFIGURACIÓN: cambia aquí tu número de WhatsApp
    Formato: 52 + 10 dígitos, sin espacios ni signos. */
 const CONFIG = {
-  whatsapp: "5215500000000",
-  whatsappVisible: "55 0000 0000",
+  whatsapp: "525567807245",
+  whatsappVisible: "55 6780 7245",
   mensajeWhatsApp: "Hola Safe Pixel 👋, quiero cotizar una página web / sistema para mi negocio."
 };
 
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTabs();
   initTilt();
   initForm();
+  initPlans();
   initHero3D();
   document.getElementById("year").textContent = new Date().getFullYear();
 });
@@ -193,7 +194,7 @@ function initHero3D() {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x07070f, 0.045);
+  scene.fog = new THREE.FogExp2(0x070707, 0.045);
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
   camera.position.set(0, 0, 14);
 
@@ -202,22 +203,22 @@ function initHero3D() {
 
   // Luces
   scene.add(new THREE.AmbientLight(0xffffff, 0.35));
-  const l1 = new THREE.PointLight(0x00e5ff, 2.2, 40); l1.position.set(6, 4, 8); scene.add(l1);
-  const l2 = new THREE.PointLight(0xff2bd6, 1.8, 40); l2.position.set(-6, -4, 6); scene.add(l2);
+  const l1 = new THREE.PointLight(0xffffff, 2.4, 40); l1.position.set(6, 4, 8); scene.add(l1);
+  const l2 = new THREE.PointLight(0x9a9a9a, 1.6, 40); l2.position.set(-6, -4, 6); scene.add(l2);
 
   // Esfera de pixeles (InstancedMesh = muy eficiente)
   const isMobile = window.innerWidth < 760;
   const COUNT = isMobile ? 420 : 900;
   const RADIUS = 3.6;
   const cubeGeo = new THREE.BoxGeometry(0.16, 0.16, 0.16);
-  const cubeMat = new THREE.MeshStandardMaterial({ metalness: 0.4, roughness: 0.3, emissive: 0x1a0f40, emissiveIntensity: 0.6 });
+  const cubeMat = new THREE.MeshStandardMaterial({ metalness: 0.4, roughness: 0.3, emissive: 0x1a1a1a, emissiveIntensity: 0.6 });
   const cubes = new THREE.InstancedMesh(cubeGeo, cubeMat, COUNT);
   world.add(cubes);
 
   const base = [];
   const dummy = new THREE.Object3D();
   const color = new THREE.Color();
-  const palette = [new THREE.Color(0x00e5ff), new THREE.Color(0x7c4dff), new THREE.Color(0xff2bd6)];
+  const palette = [new THREE.Color(0xffffff), new THREE.Color(0x5a5a5a), new THREE.Color(0xd0d0d0)];
   const golden = Math.PI * (3 - Math.sqrt(5));
   for (let i = 0; i < COUNT; i++) {
     const y = 1 - (i / (COUNT - 1)) * 2;
@@ -234,7 +235,7 @@ function initHero3D() {
   // Núcleo de alambre
   const core = new THREE.Mesh(
     new THREE.IcosahedronGeometry(2.2, 1),
-    new THREE.MeshBasicMaterial({ color: 0x7c4dff, wireframe: true, transparent: true, opacity: 0.35 })
+    new THREE.MeshBasicMaterial({ color: 0x8c8c8c, wireframe: true, transparent: true, opacity: 0.3 })
   );
   world.add(core);
 
@@ -250,7 +251,7 @@ function initHero3D() {
   }
   const ringGeo = new THREE.BufferGeometry();
   ringGeo.setAttribute("position", new THREE.BufferAttribute(ringPos, 3));
-  const ring = new THREE.Points(ringGeo, new THREE.PointsMaterial({ color: 0x00e5ff, size: 0.04, transparent: true, opacity: 0.8 }));
+  const ring = new THREE.Points(ringGeo, new THREE.PointsMaterial({ color: 0xffffff, size: 0.04, transparent: true, opacity: 0.7 }));
   ring.rotation.x = 1.15;
   ring.rotation.z = 0.3;
   world.add(ring);
@@ -322,4 +323,22 @@ function initHero3D() {
     renderer.render(scene, camera);
   }
   animate();
+}
+
+/* ---------- Botones de precios: rellenan el formulario ---------- */
+function initPlans() {
+  const form = document.getElementById("contactForm");
+  const mapa = {
+    "Landing Page": "Página web", "Web Corporativa": "Página web", "Corporativo Multi-empresa": "Página web",
+    "Tienda en Línea": "Tienda en línea", "Menú Digital WhatsApp": "Menú digital WhatsApp / web",
+    "Punto de Venta": "Punto de venta", "Sistema a la Medida": "Sistema a la medida",
+    "Hosting Básico": "Hosting / dominio", "Hosting Negocio": "Hosting / dominio", "Mantenimiento": "Hosting / dominio"
+  };
+  document.querySelectorAll("[data-plan]").forEach(btn =>
+    btn.addEventListener("click", () => {
+      const plan = btn.dataset.plan;
+      form.servicio.value = mapa[plan] || "Otro";
+      if (!form.mensaje.value) form.mensaje.value = `Me interesa el paquete "${plan}".`;
+    })
+  );
 }

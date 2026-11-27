@@ -22,11 +22,8 @@ if (!empty($_POST['website'])) {
     responder(200, ['ok' => true]);
 }
 
-$configFile = __DIR__ . '/config.php';
-if (!is_file($configFile)) {
-    responder(500, ['ok' => false, 'error' => 'Falta config.php']);
-}
-$config = require $configFile;
+require __DIR__ . '/db.php';
+$config = config();
 
 // Limpieza y validación
 $campo = fn(string $k, int $max) => mb_substr(trim((string)($_POST[$k] ?? '')), 0, $max);
@@ -49,12 +46,7 @@ $ip     = $_SERVER['REMOTE_ADDR'] ?? null;
 $origen = mb_substr((string)($_SERVER['HTTP_REFERER'] ?? ''), 0, 60);
 
 try {
-    $pdo = new PDO(
-        "mysql:host={$config['db_host']};dbname={$config['db_name']};charset=utf8mb4",
-        $config['db_user'],
-        $config['db_pass'],
-        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_EMULATE_PREPARES => false]
-    );
+    $pdo = db();
 
     // Límite: máximo 5 envíos por IP cada hora
     $q = $pdo->prepare('SELECT COUNT(*) FROM prospectos WHERE ip = ? AND creado_en > (NOW() - INTERVAL 1 HOUR)');
