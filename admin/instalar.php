@@ -7,6 +7,20 @@ declare(strict_types=1);
 require __DIR__ . '/_auth.php';
 
 $pdo = db();
+
+// Si las tablas no existen todavía, se crean desde database/safepixel.sql
+if (!$pdo->query("SHOW TABLES LIKE 'usuarios'")->fetchColumn()) {
+    $sqlFile = __DIR__ . '/../database/safepixel.sql';
+    if (!is_file($sqlFile)) {
+        http_response_code(500);
+        exit('Faltan las tablas y no se encontró database/safepixel.sql');
+    }
+    $sql = preg_replace('/^\s*--.*$/m', '', (string)file_get_contents($sqlFile));
+    foreach (array_filter(array_map('trim', explode(';', $sql))) as $stmt) {
+        $pdo->exec($stmt);
+    }
+}
+
 $hayUsuarios = (int)$pdo->query('SELECT COUNT(*) FROM usuarios')->fetchColumn() > 0;
 $msg = '';
 $error = '';

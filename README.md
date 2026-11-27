@@ -31,6 +31,8 @@ MARKETING.md             Plan para conseguir clientes
 
 ## Publicar en Hostinger
 
+> **Estado (27-nov-2026):** publicada en https://safepixels.com.mx con base de datos `u912659512_spweb`. Los archivos se suben uno por uno (no con el despliegue completo de Git) para no borrar la carpeta `mjm/` que vive en el mismo dominio. `admin/instalar.php` crea las tablas automáticamente si no existen.
+
 1. **hPanel → Bases de datos → MySQL:** crea una base de datos y un usuario. Anota nombre, usuario y contraseña.
 2. **phpMyAdmin → Importar:** sube `database/safepixel.sql`.
 3. **Administrador de archivos → `public_html`:** sube todo el contenido del proyecto (menos la carpeta `.git`).
