@@ -91,7 +91,7 @@ Precios en MXN + IVA si piden factura. Ajústalos en `index.html` (sección `id=
 | Archivo | Duración | Uso |
 |---|---|---|
 | `safe-pixel-historia.mp4` | 45 s, con música | Historia por capítulos (Doña Lupe y sus quesadillas). Ideal para TikTok/Reels y como **anuncio** en Meta Ads |
-| `safe-pixel-promo.mp4` | 26 s, sin música | Rápido y directo. Súbelo con un audio en tendencia desde la app |
+| `safe-pixel-promo.mp4` | 26 s, con música | Rápido y directo. Si quieres, cámbiale el audio por uno en tendencia desde la app |
 
 Tips: publica el de historia con un texto como *"Si tienes negocio en Tultitlán, mira esto 👀"*. En TikTok la parte de abajo y la derecha quedan tapadas por botones: los videos ya dejan ese espacio libre.
 Para cambiar textos o el color de acento, edita `historia.html` / `promo.html` (variable `--acc`, por ejemplo verde neón `#c6ff00`).
