@@ -5,6 +5,10 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 
+# Dirección oficial sin www
+RewriteCond %{HTTP_HOST} ^www\.safepixels\.com\.mx$ [NC]
+RewriteRule ^(.*)$ https://safepixels.com.mx/$1 [L,R=301]
+
 # Bloquear acceso a archivos sensibles
 <FilesMatch "^(config\.php|config\.example\.php|db\.php|_auth\.php|.*\.sql|.*\.md)$">
   Require all denied

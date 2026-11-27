@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
-Sitemap: https://www.safepixels.com.mx/sitemap.xml
+Sitemap: https://safepixels.com.mx/sitemap.xml
