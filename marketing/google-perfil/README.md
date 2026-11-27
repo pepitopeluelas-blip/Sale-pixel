@@ -27,7 +27,7 @@ Google pedirá **verificar** la empresa (casi siempre con un video corto donde m
 ## 2. Descripción (máx. 750 caracteres)
 
 ```
-Safe Pixel diseña páginas web y sistemas para negocios de Tultitlán, Coacalco, Cuautitlán y alrededores. Hacemos páginas rápidas y adaptadas a celular, tiendas en línea, menús digitales con pedidos por WhatsApp, puntos de venta, inventarios y agendas de citas. Nos encargamos de todo: dominio, hosting, correos corporativos y certificado de seguridad. Páginas web desde $1,999 MXN. Trabajamos con empresas como Corporativo Mareka, Narvaza, CATEM Tultitlán, Grúas y Madrinas JM y Multiservicios Compushop. Atención directa por WhatsApp, sin intermediarios. Cotiza gratis.
+Safe Pixel diseña páginas web y sistemas para negocios de Tultitlán, Coacalco, Cuautitlán y alrededores. Hacemos páginas rápidas y adaptadas a celular, tiendas en línea, menús digitales con pedidos por WhatsApp, chatbots que responden tu WhatsApp las 24 horas, puntos de venta, inventarios y agendas de citas. Nos encargamos de todo: dominio, hosting, correos corporativos y certificado de seguridad. Páginas web desde $1,999 MXN. Trabajamos con empresas como Corporativo Mareka, Narvaza, CATEM Tultitlán, Grúas y Madrinas JM y Multiservicios Compushop. Atención directa por WhatsApp, sin intermediarios. Cotiza gratis.
 ```
 
 ## 3. Servicios (sección "Servicios" → "Agregar servicio personalizado")
@@ -39,6 +39,7 @@ Safe Pixel diseña páginas web y sistemas para negocios de Tultitlán, Coacalco
 | Portal multi-empresa | $7,999 | Sitio principal del grupo con sub-sitio para cada empresa e identidad unificada. Incluye panel para editar contenido. |
 | Tienda en línea | $8,999 | Catálogo de hasta 50 productos, carrito, pagos con tarjeta, OXXO o transferencia y panel de pedidos. |
 | Menú digital con pedidos por WhatsApp | $1,499 | Menú con fotos y precios; el cliente arma su pedido y te llega por WhatsApp. Incluye código QR para mesas. |
+| Chatbot de WhatsApp | $2,499 | Tu WhatsApp responde solo 24/7: menú de opciones, preguntas frecuentes, horarios y precios, toma pedidos o citas y te pasa la conversación cuando hace falta. |
 | Punto de venta (POS) | $5,999 | Ventas, tickets, cortes de caja, inventario con alertas, usuarios y reportes. Funciona en computadora, tablet o celular. |
 | Sistema a la medida | Desde $9,999 | Flotillas, CRM, citas, portales con acceso. Analizamos tu proceso y lo convertimos en un sistema web. |
 | Hosting y dominio | Desde $799/año | Hosting rápido, certificado SSL, respaldos y soporte por WhatsApp. Plan Negocio con dominio .com.mx y correos: $1,299/año. |

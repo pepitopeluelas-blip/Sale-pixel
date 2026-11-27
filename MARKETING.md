@@ -74,6 +74,7 @@ Cierra siempre con una acción: *"Escríbeme 'WEB' por WhatsApp y te hago un dia
 | Corporativo Multi-empresa | $7,999 | Tipo Corporativo Mareka con sub-sitios de Mareka e ISL |
 | Tienda en Línea | $8,999 | Catálogo + carrito + pagos |
 | Menú Digital WhatsApp | $1,499 | Taquerías, cocinas económicas, cafeterías |
+| Chatbot de WhatsApp | $2,499 | Atención automática 24/7 para cualquier negocio |
 | Punto de Venta | $5,999 | Tiendas, tlapalerías, refaccionarias |
 | Sistema a la Medida | desde $9,999 | Flotillas, CRM, citas |
 | Hosting Básico / Negocio | $799 / $1,299 al año | Negocio incluye dominio .com.mx y correos |

@@ -330,7 +330,7 @@ function initPlans() {
   const form = document.getElementById("contactForm");
   const mapa = {
     "Landing Page": "Página web", "Web Corporativa": "Página web", "Corporativo Multi-empresa": "Página web",
-    "Tienda en Línea": "Tienda en línea", "Menú Digital WhatsApp": "Menú digital WhatsApp / web",
+    "Tienda en Línea": "Tienda en línea", "Menú Digital WhatsApp": "Menú digital WhatsApp / web", "Chatbot de WhatsApp": "Chatbot de WhatsApp",
     "Punto de Venta": "Punto de venta", "Sistema a la Medida": "Sistema a la medida",
     "Hosting Básico": "Hosting / dominio", "Hosting Negocio": "Hosting / dominio", "Mantenimiento": "Hosting / dominio"
   };
