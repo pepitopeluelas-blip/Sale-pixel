@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono&family=Inter:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+<style>
+  /* Publicación 1080x1350 (4:5). Elige con #1, #2 o #3 en la URL */
+  html,body{margin:0;width:1080px;height:1350px;background:#070707;color:#f2f2f2;font-family:Inter}
+  .s{position:relative;width:1080px;height:1350px;overflow:hidden;padding:110px 90px;box-sizing:border-box;
+     background:radial-gradient(ellipse at 50% 35%,#1f1f1f,#070707 65%);display:none;flex-direction:column}
+  .s.on{display:flex}
+  .grid{position:absolute;inset:0;opacity:.16;pointer-events:none;
+     background-image:linear-gradient(#ffffff22 2px,transparent 2px),linear-gradient(90deg,#ffffff22 2px,transparent 2px);background-size:90px 90px}
+  .top{display:flex;justify-content:space-between;align-items:center;position:relative}
+  .mono{font:400 26px "Space Mono";letter-spacing:.14em;color:#8c8c8c;text-transform:uppercase}
+  .brand{font:700 32px "Space Grotesk";display:flex;gap:12px;align-items:center}
+  .brand i{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 16px #fff}
+  .body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:56px;position:relative}
+  h1{font:700 104px/1.02 "Space Grotesk";letter-spacing:-.04em;margin:0;color:#9a9a9a}
+  h1 b{color:#fff} h1 em{font-family:Inter;font-style:italic;font-weight:600;color:#fff}
+  .logo{display:grid;grid-template-columns:repeat(2,90px);gap:18px}
+  .logo i{width:90px;height:90px;border-radius:20px;background:#fff}
+  .logo i:nth-child(2){background:#8c8c8c}.logo i:nth-child(3){background:#5c5c5c}.logo i:nth-child(4){background:#d4d4d4}
+  .list div{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:2px solid #262626;font:600 46px "Space Grotesk"}
+  .list small{font:400 24px "Space Mono";color:#7d7d7d;letter-spacing:.08em}
+  .price{font:700 230px/1 "Space Grotesk";letter-spacing:-.06em;color:#fff}
+  .price small{font-size:56px;color:#7d7d7d;letter-spacing:0}
+  .chips{display:flex;flex-wrap:wrap;gap:16px}
+  .chips span{padding:16px 28px;border:2px solid #333;border-radius:50px;font-size:32px;color:#d4d4d4}
+  .cta{position:relative;display:flex;justify-content:space-between;align-items:center;padding:34px 44px;border-radius:30px;background:#f2f2f2;color:#070707}
+  .cta b{font:700 40px "Space Grotesk"} .cta span{font:600 34px Inter}
+</style></head>
+<body>
+<section class="s" id="pa"><div class="grid"></div>
+  <div class="top"><span class="mono">// Consejo para tu negocio</span><span class="brand"><i></i>Safe Pixel</span></div>
+  <div class="body">
+    <h1>3 cosas que <em>debe</em> tener <b>la página de tu negocio</b></h1>
+    <div class="list">
+      <div>1 · Botón directo a WhatsApp<small>QUE TE ESCRIBAN</small></div>
+      <div>2 · Que se vea bien en celular<small>AHÍ TE BUSCAN</small></div>
+      <div>3 · Que aparezca en Google<small>QUE TE ENCUENTREN</small></div>
+    </div>
+  </div>
+  <div class="cta"><b>¿La tuya las tiene?</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+<section class="s" id="pb"><div class="grid"></div>
+  <div class="top"><span class="mono">// Pregunta frecuente</span><span class="brand"><i></i>Safe Pixel</span></div>
+  <div class="body">
+    <h1>¿Cuánto cuesta <em>una</em> <b>página web?</b></h1>
+    <div class="price">$1,999<small> MXN</small></div>
+    <div class="chips"><span>Diseño para celular</span><span>Botón de WhatsApp</span><span>Formulario</span><span>Lista en 7 días</span></div>
+  </div>
+  <div class="cta"><b>Cotiza gratis</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+<script>document.getElementById('p'+(location.hash.slice(1)||'a')).classList.add('on')</script>
+</body></html>
