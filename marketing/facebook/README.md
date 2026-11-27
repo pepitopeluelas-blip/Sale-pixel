@@ -139,3 +139,64 @@ Hecho en Tultitlán. Cotiza gratis 👉 wa.me/525567807245
 ## Después: conectarla a Claude
 
 Cuando la página exista, conecta **Metricool** en claude.ai → Configuración → Conectores. Así puedo programar publicaciones y revisar estadísticas (siempre con tu aprobación antes de publicar).
+
+---
+
+# Publicar en grupos de Facebook (a mano)
+
+Meta no permite que ninguna app publique en grupos desde 2024, así que esto se hace desde tu cuenta personal. Unos 10 minutos al día.
+
+## Grupos a buscar
+
+En el buscador de Facebook → pestaña **Grupos**, busca y únete (algunos tardan días en aceptarte):
+
+- `Tultitlán compra venta` · `Emprendedores Tultitlán` · `Vecinos de Tultitlán` · `Fuentes del Valle` · `Izcalli del Valle` · `Lechería`
+- `Coacalco compra venta` · `Emprendedores Coacalco` · `San Rafael Coacalco` · `Villa de las Flores`
+- `Tlalnepantla compra venta` · `Emprendedores Tlalnepantla` · `Tlalnepantla negocios`
+- `Cuautitlán Izcalli emprendedores` · `Cuautitlán compra venta` · `Tultepec ventas` · `Ecatepec negocios`
+
+Prefiere grupos **activos** (publicaciones de hoy) y de **emprendedores/negocios**: ahí está tu cliente.
+
+## Reglas para no ser bloqueado
+
+1. **Lee las reglas de cada grupo**: muchos solo permiten publicidad ciertos días (ej. "martes de emprendedores").
+2. **Máximo 3–5 grupos al día**, con al menos 10–15 minutos entre cada uno.
+3. **No copies el mismo texto** en todos: usa las variantes de abajo y cambia alguna frase.
+4. Sube el **video** directamente (no solo el enlace): Facebook le da más alcance.
+5. **Responde rápido** los comentarios; eso sube la publicación en el grupo.
+6. Mejor aún: comparte el Reel **desde la página Safe Pixel** al grupo, así ganas seguidores en la página.
+
+## Textos por zona (con `safe-pixel-historia.mp4`)
+
+**Tultitlán**
+```
+Vecinos de Tultitlán 👋 ¿Tienen negocio y nadie los encuentra en Google?
+Hago páginas web y menús por WhatsApp para negocios de la zona, desde $1,999.
+Cotización gratis 👉 wa.me/525567807245
+```
+
+**Coacalco**
+```
+Hola Coacalco 🙌 Si tienes negocio (taquería, estética, tienda, taller…) y quieres que te encuentren en internet, te hago tu página desde $1,999.
+Pregunta sin compromiso por WhatsApp 👉 wa.me/525567807245
+```
+
+**Tlalnepantla**
+```
+Emprendedores de Tlalnepantla 💼 ¿Su negocio ya tiene página web?
+Diseño páginas, punto de venta y menú digital con pedidos por WhatsApp.
+Desde $1,999 · Cotiza gratis 👉 wa.me/525567807245
+```
+
+**Cuautitlán / Izcalli / Tultepec**
+```
+¿Tienes negocio en la zona? 📍 Te ayudo a que aparezca en Google y te pidan por WhatsApp.
+Páginas web desde $1,999. Escríbeme 👉 wa.me/525567807245
+```
+
+**Grupos de emprendedores (con `safe-pixel-promo.mp4`)**
+```
+Buen día, emprendedores 👋 Soy de Safe Pixel, hacemos páginas web y sistemas para negocios.
+Ya trabajamos con Corporativo Mareka, Narvaza, CATEM Tultitlán y más.
+Si alguien necesita su página o un punto de venta, con gusto lo cotizo gratis 👉 wa.me/525567807245
+```
