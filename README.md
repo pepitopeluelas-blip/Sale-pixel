@@ -12,7 +12,7 @@ assets/img/              Favicon e imágenes (agrega aquí og-safepixel.jpg 1200
 api/contacto.php         Recibe el formulario y lo guarda en MySQL
 api/db.php               Conexión compartida a MySQL
 admin/                   Panel privado: prospectos, estatus, montos, notas, exportar a Excel
-marketing/video/         Video publicitario (MP4) y su fuente HTML
+marketing/video/         Videos publicitarios (MP4) y su fuente HTML
 api/config.example.php   Plantilla de configuración (copiar a config.php)
 database/safepixel.sql   Tablas: prospectos y clientes
 .htaccess                HTTPS, caché, seguridad

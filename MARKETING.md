@@ -18,7 +18,7 @@ Tu portafolio ya te da autoridad en estos giros. Ataca primero donde ya tienes c
 |---|---|---|
 | **Transporte y logística** (Narvaza, ISL) | Web corporativa + cotizador + rastreo/flotillas | "Tus clientes corporativos te buscan en Google antes de llamarte" |
 | **Restaurantes, cafeterías, taquerías** | Menú digital WhatsApp + punto de venta | "Recibe pedidos por WhatsApp sin pagar comisión a apps" |
-| **Tiendas de cómputo / retail** (Compushop) | Catálogo en línea + POS + inventario | "Controla tu inventario y vende en línea" |
+| **Tiendas de cómputo / retail** (Multiservicios Compushop) | Catálogo en línea + POS + inventario | "Controla tu inventario y vende en línea" |
 | **Grúas, arrastre y madrinas** (Grúas y Madrinas JM) | Web con botón de emergencia a WhatsApp + Google Maps | "Cuando alguien se queda tirado, busca grúa en Google: que te encuentre a ti" |
 | **Sindicatos, asociaciones, gobierno local** (CATEM Tultitlán) | Sitio informativo + portal de agremiados | "Comunica y organiza a tu gente" |
 | **Grupos empresariales** (Corporativo Mareka → Mareka, ISL) | Portal corporativo multi-empresa | "Una sola imagen para todas tus empresas" |
@@ -69,24 +69,32 @@ Cierra siempre con una acción: *"Escríbeme 'WEB' por WhatsApp y te hago un dia
 
 | Paquete | Precio | Referencia |
 |---|---|---|
-| Landing Page | $3,500 | Campañas y negocios que inician |
-| **Web Corporativa** | **$7,900** | Tipo Narvaza / CATEM Tultitlán (incluye 1 año de hosting + dominio) |
-| Corporativo Multi-empresa | $14,900 | Tipo Corporativo Mareka con sub-sitios de Mareka e ISL |
-| Tienda en Línea | $16,900 | Catálogo + carrito + pagos |
-| Menú Digital WhatsApp | $4,500 | Restaurantes |
-| Punto de Venta | $12,500 | Tiendas, refaccionarias, restaurantes |
-| Sistema a la Medida | desde $18,000 | Flotillas, CRM, citas |
-| Hosting Básico / Negocio | $1,500 / $2,400 al año | Negocio incluye dominio .com.mx y correos |
-| Mantenimiento | $650 al mes | Ingreso recurrente: ofrécelo a TODOS |
+| Landing Page | $1,999 | Negocios que inician |
+| **Web Corporativa** | **$3,999** | Tipo Narvaza / CATEM Tultitlán (incluye 1 año de hosting + dominio) |
+| Corporativo Multi-empresa | $7,999 | Tipo Corporativo Mareka con sub-sitios de Mareka e ISL |
+| Tienda en Línea | $8,999 | Catálogo + carrito + pagos |
+| Menú Digital WhatsApp | $1,499 | Taquerías, cocinas económicas, cafeterías |
+| Punto de Venta | $5,999 | Tiendas, tlapalerías, refaccionarias |
+| Sistema a la Medida | desde $9,999 | Flotillas, CRM, citas |
+| Hosting Básico / Negocio | $799 / $1,299 al año | Negocio incluye dominio .com.mx y correos |
+| Mantenimiento | $299 al mes | Ingreso recurrente: ofrécelo a TODOS |
+
+Precios pensados para negocios pequeños de Tultitlán y alrededores.
 
 Técnica de venta: el paquete del centro ("Más elegido") es el que quieres vender; los extremos sirven de referencia.
 Precios en MXN + IVA si piden factura. Ajústalos en `index.html` (sección `id="precios"`).
 
-**Ingreso recurrente:** si cada cliente paga hosting ($2,400/año) + mantenimiento ($650/mes), 20 clientes = ~$204,000 MXN al año solo en recurrentes.
+**Ingreso recurrente:** si cada cliente paga hosting ($1,299/año) + mantenimiento ($299/mes), 20 clientes = ~$97,700 MXN al año solo en recurrentes.
 
-## Video publicitario
+## Videos publicitarios (`marketing/video/`)
 
-`marketing/video/safe-pixel-promo.mp4` (vertical 1080×1920, para Reels, TikTok, Shorts y Estados de WhatsApp). Súbelo **sin música** y agrega un audio en tendencia desde la app: así el algoritmo lo empuja más. Úsalo también como anuncio en Meta Ads con objetivo "Mensajes".
+| Archivo | Duración | Uso |
+|---|---|---|
+| `safe-pixel-historia.mp4` | 45 s, con música | Historia por capítulos (Doña Lupe y sus quesadillas). Ideal para TikTok/Reels y como **anuncio** en Meta Ads |
+| `safe-pixel-promo.mp4` | 26 s, sin música | Rápido y directo. Súbelo con un audio en tendencia desde la app |
+
+Tips: publica el de historia con un texto como *"Si tienes negocio en Tultitlán, mira esto 👀"*. En TikTok la parte de abajo y la derecha quedan tapadas por botones: los videos ya dejan ese espacio libre.
+Para cambiar textos o el color de acento, edita `historia.html` / `promo.html` (variable `--acc`, por ejemplo verde neón `#c6ff00`).
 
 ## 9. Embudo y seguimiento
 
