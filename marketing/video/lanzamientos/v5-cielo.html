@@ -1,0 +1,60 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><title>Safe Pixel · Lanzamiento (cielo y menta)</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+/* Estilo 5: cielo y menta, celular con pedido por WhatsApp desde el menú digital. 16 s */
+.sky{position:absolute;inset:0;background:linear-gradient(180deg,#5aa9ff,#a9d6ff 60%,#e8f6ff);animation:fadeout .8s ease calc(3.6s) both}
+@keyframes fadeout{to{opacity:0}}
+.cloud{position:absolute;border-radius:50%;background:#fff;filter:blur(8px);opacity:.95;animation:cl 4.4s linear both}
+@keyframes cl{from{transform:translateX(0)}to{transform:translateX(-260px)}}
+.mint{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,#f3fff8,#d9f5e6 60%,#bfead3);z-index:-1}
+.stage{color:#0f2b20}
+h2{font-size:100px;font-weight:700}
+h2 em{font-style:normal;color:#0f9d58}
+.sky h2{color:#fff;text-shadow:0 10px 40px #0a3d8a55}
+.phone{width:620px;height:1180px;border-radius:80px;border:16px solid #10241b;background:#efe7dc;overflow:hidden;box-shadow:0 60px 120px -30px #0f2b2088;position:relative}
+.ph-top{height:130px;background:#0f7a4f;color:#fff;display:flex;align-items:flex-end;padding:0 34px 22px;font:700 36px Inter;gap:16px}
+.ph-top i{width:56px;height:56px;border-radius:50%;background:#fff;display:inline-block}
+.msgs{padding:30px;display:flex;flex-direction:column;gap:22px}
+.m{padding:22px 26px;border-radius:26px;font:500 32px Inter;max-width:82%;text-align:left;box-shadow:0 4px 0 #0000000f}
+.m.in{background:#fff;align-self:flex-start}
+.m.out{background:#d4f8c4;align-self:flex-end}
+.m small{display:block;font-size:22px;opacity:.55;margin-top:6px;text-align:right}
+.menu{background:#fff;border-radius:20px;overflow:hidden;border:2px solid #cfe9dc}
+.menu b{display:block;background:#0f9d58;color:#fff;padding:14px 18px;font:700 28px Inter}
+.menu span{display:block;padding:12px 18px;font:500 26px Inter;border-top:1px solid #e3f2ea}
+.side{position:absolute;padding:20px 30px;border-radius:40px;background:#0f2b20;color:#d9ffe9;font:600 36px Inter;box-shadow:0 20px 40px -10px #0f2b2066}
+.price{font-size:200px;font-weight:700;color:#0f2b20}
+.wa{background:#0f9d58;color:#fff}.wa svg{fill:#fff}
+</style></head><body><div class="stage"><div class="mint"></div>
+<div class="sky">
+  <i class="cloud" style="left:100px;top:300px;width:420px;height:140px"></i>
+  <i class="cloud" style="left:620px;top:520px;width:520px;height:170px"></i>
+  <i class="cloud" style="left:-80px;top:1300px;width:600px;height:200px"></i>
+  <i class="cloud" style="left:560px;top:1500px;width:460px;height:150px"></i>
+</div>
+
+<section class="scene" style="--s:0s;--d:4s">
+  <div class="sky" style="position:static;background:none;animation:none"><h2 class="gs in">Tus clientes ya están en <em style="color:#fff;text-decoration:underline">WhatsApp</em>.</h2></div>
+</section>
+
+<section class="scene" style="--s:4s;--d:7.2s">
+  <div class="phone pop">
+    <div class="ph-top"><i></i>Taquería La Esquina</div>
+    <div class="msgs">
+      <div class="m in in" style="--i:2">¡Hola! Aquí está nuestro menú 🌮<div class="menu"><b>Menú digital</b><span>Tacos al pastor · $18</span><span>Gringas · $45</span><span>Refrescos · $25</span></div><small>13:02</small></div>
+      <div class="m out in" style="--i:7">5 de pastor y 1 refresco, por favor 🙌<small>13:03 ✓✓</small></div>
+      <div class="m in in" style="--i:11">¡Pedido recibido! ✅ Listo en 15 min<small>13:03</small></div>
+    </div>
+  </div>
+  <span class="side in" style="--i:5;left:40px;top:250px">Sin apps ni comisiones</span>
+  <span class="side in" style="--i:9;right:40px;top:1620px">El pedido llega a tu WhatsApp</span>
+</section>
+
+<section class="scene last" style="--s:11.2s;--d:4.8s">
+  <h2 class="gs in">Menú digital con pedidos por <em>WhatsApp</em></h2>
+  <div class="price gs in" style="--i:2;margin-top:30px">$1,499</div>
+  <div class="cta in" style="--i:4;margin-top:40px"><span class="wa"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg> 55 6780 7245</span></div>
+  <p class="foot">Safe Pixel · safepixels.com.mx</p>
+</section>
+</div><script>window.seek=t=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=t*1000});</script></body></html>

@@ -1,0 +1,44 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><title>Safe Pixel · Lanzamiento (pastel 3D)</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+/* Estilo 2: pastel 3D juguetón (rosa/lila), palabras que rebotan y tarjetas flotantes. 15 s */
+.stage{background:linear-gradient(160deg,#ffe3f1,#efe2ff 55%,#e3f0ff);color:#3b1f5c;perspective:1400px}
+.blob{position:absolute;border-radius:50%;filter:blur(30px);opacity:.7;animation:drift 15s ease-in-out both}
+@keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(60px,-80px)}100%{transform:translate(-40px,40px)}}
+.word{font-size:190px;font-weight:700;color:#6b2fd6;text-shadow:0 18px 0 #e8c6ff,0 30px 60px #b57cff66}
+.card{position:absolute;width:560px;border-radius:40px;background:#fff;box-shadow:0 40px 80px -20px #8a4fd655,0 0 0 2px #f3e6ff;padding:40px;text-align:left;
+  opacity:0;animation:card 1s cubic-bezier(.2,1.3,.4,1) calc(var(--s) + var(--k)*.35s) both, bob 3s ease-in-out calc(var(--s) + 1s + var(--k)*.35s) infinite}
+@keyframes card{from{opacity:0;transform:translateY(300px) rotateX(50deg) rotateZ(var(--r))}to{opacity:1;transform:rotateZ(var(--r))}}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -18px}}
+.card h4{font:700 48px "Space Grotesk";margin-bottom:14px}
+.card p{font:500 34px Inter;color:#7a5a9a}
+.card .bar{height:22px;border-radius:12px;background:#f1e4ff;margin:12px 0}
+.card .btn{display:inline-block;margin-top:16px;padding:16px 30px;border-radius:30px;background:#ff5fb2;color:#fff;font:700 30px Inter}
+.bub{padding:18px 24px;border-radius:24px;font:500 30px Inter;margin:10px 0;max-width:88%}
+h2{font-size:110px;font-weight:700}
+h2 em{font-style:normal;color:#ff4fa6}
+.wa{background:#6b2fd6;color:#fff}.wa svg{fill:#fff}
+</style></head><body><div class="stage">
+<i class="blob" style="left:-120px;top:200px;width:520px;height:520px;background:#ffb3d9"></i>
+<i class="blob" style="right:-160px;top:900px;width:620px;height:620px;background:#c9a7ff"></i>
+<i class="blob" style="left:200px;bottom:-200px;width:600px;height:500px;background:#a8d8ff"></i>
+
+<section class="scene" style="--s:0s;--d:1.6s"><div class="word gs pop">Publica.</div></section>
+<section class="scene" style="--s:1.6s;--d:1.6s"><div class="word gs pop">Vende.</div></section>
+<section class="scene" style="--s:3.2s;--d:1.6s"><div class="word gs pop">Crece.</div></section>
+
+<section class="scene" style="--s:4.8s;--d:5.4s">
+  <div class="card" style="--k:0;--r:-6deg;left:90px;top:330px"><h4>🌐 Tu página web</h4><div class="bar" style="width:90%"></div><div class="bar" style="width:70%"></div><span class="btn">Escríbenos</span></div>
+  <div class="card" style="--k:1;--r:5deg;right:80px;top:760px"><h4>💬 WhatsApp</h4><div class="bub" style="background:#f1e4ff">¿Tienen servicio hoy?</div><div class="bub" style="background:#ffe0f0;margin-left:auto">¡Claro! ¿A qué hora?</div></div>
+  <div class="card" style="--k:2;--r:-3deg;left:120px;top:1220px"><h4>🧾 Tu punto de venta</h4><p>Ventas · Caja · Inventario</p></div>
+</section>
+
+<section class="scene last" style="--s:10.2s;--d:4.8s">
+  <div class="logo pop" style="--q:70px"><i style="background:#6b2fd6"></i><i style="background:#ff5fb2"></i><i style="background:#b893ff"></i><i style="background:#ffc2e2"></i></div>
+  <h2 class="gs in" style="--i:1;margin-top:50px">Todo con <em>Safe Pixel</em></h2>
+  <p class="in" style="--i:2;font:600 50px Inter;margin-top:30px">Páginas web desde $1,999</p>
+  <div class="cta in" style="--i:4;margin-top:50px"><span class="wa"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg> 55 6780 7245</span></div>
+  <p class="foot">safepixels.com.mx</p>
+</section>
+</div><script>window.seek=t=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=t*1000});</script></body></html>

@@ -1,0 +1,20 @@
+/* Base común de los videos de lanzamiento (1080x1920). Cada escena: .scene con --s (inicio) y --d (duración). */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif}
+.stage{position:relative;width:1080px;height:1920px;overflow:hidden}
+.scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 90px;opacity:0;animation:scene var(--d) linear var(--s) both}
+.scene.last{animation-name:sceneLast}
+@keyframes scene{0%{opacity:0}8%{opacity:1}90%{opacity:1}100%{opacity:0}}
+@keyframes sceneLast{0%{opacity:0}10%{opacity:1}100%{opacity:1}}
+.in{opacity:0;animation:up .8s cubic-bezier(.16,.84,.24,1) calc(var(--s) + .15s + var(--i,0)*.2s) both}
+@keyframes up{from{opacity:0;transform:translateY(60px) scale(.96);filter:blur(10px)}to{opacity:1;transform:none;filter:none}}
+.pop{opacity:0;animation:pop .7s cubic-bezier(.3,1.6,.5,1) calc(var(--s) + .15s + var(--i,0)*.2s) both}
+@keyframes pop{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:none}}
+.gs{font-family:"Space Grotesk",sans-serif;letter-spacing:-.04em;line-height:1}
+.logo{display:inline-grid;grid-template-columns:repeat(2,var(--q,60px));gap:calc(var(--q,60px)*.18)}
+.logo i{width:var(--q,60px);height:var(--q,60px);border-radius:calc(var(--q,60px)*.22);background:#fff}
+.logo i:nth-child(2){background:#8c8c8c}.logo i:nth-child(3){background:#5c5c5c}.logo i:nth-child(4){background:#d4d4d4}
+.cta{display:flex;flex-direction:column;align-items:center;gap:26px}
+.wa{display:inline-flex;align-items:center;gap:18px;padding:30px 54px;border-radius:80px;font:700 52px Inter}
+.wa svg{width:60px;height:60px}
+.foot{position:absolute;left:0;right:0;bottom:150px;text-align:center;font:500 34px Inter;opacity:.7}
