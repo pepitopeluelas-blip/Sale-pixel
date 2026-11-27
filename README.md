@@ -23,10 +23,10 @@ MARKETING.md             Plan para conseguir clientes
 ## Antes de publicar (cambia esto)
 
 1. **WhatsApp:** ya configurado (55 6780 7245) en `assets/js/main.js`, objeto `CONFIG`.
-2. **Dominio y correo:** busca `safepixel.com.mx` en `index.html`, `robots.txt` y `sitemap.xml` y pon tu dominio real.
+2. **Dominio:** safepixels.com.mx (ya configurado en `index.html`, `robots.txt` y `sitemap.xml`).
 3. **Precios:** sección `id="precios"` de `index.html`.
 4. **Redes sociales:** enlaces del footer (`Facebook`, `Instagram`, `TikTok`) y la lista `"sameAs"`.
-5. **Imagen para compartir:** sube `assets/img/og-safepixel.jpg` (1200×630 px).
+5. **Imagen para compartir:** `assets/img/og-safepixel.jpg` (1200×630 px, ya incluida).
 6. **Capturas reales de proyectos:** en la sección Portafolio, reemplaza las iniciales (`TN`, `CM`, …) por capturas de cada sitio y enlázalas.
 
 ## Publicar en Hostinger

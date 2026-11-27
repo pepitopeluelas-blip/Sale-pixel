@@ -12,7 +12,7 @@ return [
     'db_pass' => 'CAMBIA_ESTA_CONTRASEÑA',
 
     // Correo donde quieres recibir aviso de cada prospecto nuevo
-    'notify_email' => 'contacto@safepixel.com.mx',
+    'notify_email' => 'contacto@safepixels.com.mx',
     // Remitente: debe ser un correo creado en Hostinger con tu dominio
-    'from_email'   => 'no-reply@safepixel.com.mx',
+    'from_email'   => 'no-reply@safepixels.com.mx',
 ];
