@@ -1,0 +1,52 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><title>Safe Pixel · Lanzamiento (interfaz punto de venta)</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+/* Estilo 3: interfaz limpia blanco/verde, palabras sueltas y zoom a la pantalla real del punto de venta. 18 s */
+.stage{background:#fbfcfb;color:#0d1210}
+.glowg{position:absolute;left:-200px;right:-200px;bottom:-500px;height:1100px;background:radial-gradient(ellipse at 50% 0%,#22c55e44,transparent 60%)}
+.big{font-size:210px;font-weight:700}
+h2{font-size:96px;font-weight:700}
+h2 em{font-style:normal;color:#16a34a}
+.dot{display:inline-block;width:46px;height:46px;border-radius:50%;background:#22c55e;margin-right:18px;vertical-align:middle;box-shadow:0 0 30px #22c55e99}
+.screen{position:absolute;left:50%;top:50%;width:1500px;border-radius:34px;overflow:hidden;box-shadow:0 60px 120px -30px #0d121044,0 0 0 2px #e3ebe5;
+  transform-origin:var(--ox) var(--oy);animation:cam var(--d) cubic-bezier(.45,0,.2,1) var(--s) both}
+@keyframes cam{from{transform:translate(-50%,-50%) scale(var(--z0))}to{transform:translate(-50%,-50%) scale(var(--z1))}}
+.screen img{display:block;width:100%}
+.tag{position:absolute;padding:18px 32px;border-radius:40px;background:#0d1210;color:#fff;font:600 40px Inter;box-shadow:0 20px 40px -10px #0006}
+.tag.g{background:#22c55e;color:#04140a}
+.flow{display:flex;flex-direction:column;gap:26px;align-items:center}
+.chip{padding:26px 50px;border-radius:60px;border:2px solid #d5e6da;background:#fff;font:600 54px Inter;box-shadow:0 20px 40px -20px #0d121033}
+.chip.g{background:#22c55e;border-color:#22c55e;color:#04140a}
+.arrow{font-size:50px;color:#16a34a}
+.wa{background:#0d1210;color:#fff}.wa svg{fill:#22c55e}
+</style></head><body><div class="stage"><div class="glowg"></div>
+
+<section class="scene" style="--s:0s;--d:2.2s"><div class="big gs pop">Stop.</div></section>
+<section class="scene" style="--s:2.2s;--d:2.6s"><h2 class="gs in">Deja de anotar tus ventas en <em>libreta</em>.</h2></section>
+
+<section class="scene" style="--s:4.8s;--d:3.6s">
+  <div class="screen" style="--s:4.8s;--d:3.6s;--z0:.62;--z1:.7;--ox:50%;--oy:50%"><img src="pos-venta.png" alt=""></div>
+  <span class="tag in" style="--i:3;left:80px;top:420px">Así se ve tu punto de venta</span>
+</section>
+<section class="scene" style="--s:8.4s;--d:3.4s">
+  <div class="screen" style="--s:8.4s;--d:3.4s;--z0:1.05;--z1:1.3;--ox:82%;--oy:45%"><img src="pos-venta.png" alt=""></div>
+  <span class="tag g in" style="--i:3;left:90px;top:1360px">El total y el cambio, al instante</span>
+</section>
+
+<section class="scene" style="--s:11.8s;--d:3s">
+  <div class="flow">
+    <span class="chip pop" style="--i:0">Vendes</span><span class="arrow in" style="--i:1">↓</span>
+    <span class="chip pop" style="--i:2">Se descuenta del inventario</span><span class="arrow in" style="--i:3">↓</span>
+    <span class="chip g pop" style="--i:4">Haces tu corte de caja</span>
+  </div>
+</section>
+
+<section class="scene last" style="--s:14.8s;--d:3.2s">
+  <p class="in" style="font:700 64px 'Space Grotesk'"><span class="dot"></span>Punto de venta</p>
+  <div class="big gs in" style="--i:1;margin-top:30px">$5,999</div>
+  <p class="in" style="--i:2;font:600 46px Inter;color:#4b5a52;margin-top:20px">por Safe Pixel</p>
+  <div class="cta in" style="--i:4;margin-top:50px"><span class="wa"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg> 55 6780 7245</span></div>
+  <p class="foot">safepixels.com.mx</p>
+</section>
+</div><script>window.seek=t=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=t*1000});</script></body></html>

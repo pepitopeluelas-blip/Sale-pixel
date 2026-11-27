@@ -1,0 +1,52 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><title>Safe Pixel · Lanzamiento (chatbot morado)</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<style>
+/* Estilo 4: morado brillante, ícono de app, botón luminoso y burbujas de chat. 16 s */
+.stage{background:radial-gradient(ellipse at 50% 45%,#3b1580 0%,#1a0640 45%,#08021a 100%);color:#f3ecff}
+.orb{position:absolute;width:900px;height:900px;left:90px;top:500px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#b98cff55,#6a2bff22 50%,transparent 70%);animation:spin 16s linear both}
+@keyframes spin{to{transform:rotate(360deg)}}
+.icon{width:330px;height:330px;border-radius:84px;background:linear-gradient(145deg,#ff5f8f,#a44dff 55%,#5b2bff);display:grid;place-items:center;
+  box-shadow:0 0 120px #a44dffaa,inset 0 4px 0 #ffffff55;font-size:170px}
+.btnglow{display:inline-flex;align-items:center;gap:24px;padding:40px 80px;border-radius:90px;background:linear-gradient(90deg,#7c3aff,#b45cff);font:700 64px Inter;color:#fff;
+  box-shadow:0 0 0 10px #a44dff33,0 0 90px #a44dffcc;opacity:0;animation:pop .7s cubic-bezier(.3,1.6,.5,1) calc(var(--s) + .15s) both,press 1.2s ease-in-out calc(var(--s) + 1.4s) both}
+@keyframes press{0%{transform:scale(1)}40%{transform:scale(.92)}70%{transform:scale(1.06)}100%{transform:scale(1)}}
+.ring{position:absolute;width:300px;height:300px;border-radius:50%;border:4px solid #c9a2ff;opacity:0;animation:ring 1.4s ease-out calc(var(--s) + 1.9s) both}
+@keyframes ring{from{opacity:.9;transform:scale(.6)}to{opacity:0;transform:scale(3)}}
+.chat{width:820px;display:flex;flex-direction:column;gap:26px}
+.b{padding:28px 36px;border-radius:34px;font:500 44px Inter;max-width:80%;text-align:left}
+.b.c{background:#2a1260;border:2px solid #5a33a8;align-self:flex-start}
+.b.r{background:linear-gradient(90deg,#8b45ff,#c060ff);align-self:flex-end;box-shadow:0 0 40px #a44dff88}
+.b small{display:block;font:500 26px Inter;opacity:.7;margin-top:6px}
+h2{font-size:104px;font-weight:700}
+h2 em{font-style:normal;color:#d7b3ff}
+.price{font-size:200px;font-weight:700}
+.wa{background:#fff;color:#3b1580}.wa svg{fill:#7c3aff}
+</style></head><body><div class="stage"><div class="orb"></div>
+
+<section class="scene" style="--s:0s;--d:3.2s">
+  <div class="icon pop">💬</div>
+  <h2 class="gs in" style="--i:3;margin-top:70px">Chatbot<br><em>de WhatsApp</em></h2>
+</section>
+
+<section class="scene" style="--s:3.2s;--d:3.4s">
+  <i class="ring"></i>
+  <span class="btnglow">⚡ Activar chatbot</span>
+</section>
+
+<section class="scene" style="--s:6.6s;--d:5s">
+  <div class="chat">
+    <div class="b c in" style="--i:0">¿A qué hora abren? 🕘<small>23:41</small></div>
+    <div class="b r in" style="--i:3">¡Hola! Abrimos de 9 a 19 h. ¿Te ayudo con algo más?<small>23:41 · automático</small></div>
+    <div class="b c in" style="--i:6">Quiero agendar una cita<small>23:42</small></div>
+    <div class="b r in" style="--i:9">Listo ✅ Elige tu horario aquí 👇<small>23:42 · automático</small></div>
+  </div>
+</section>
+
+<section class="scene last" style="--s:11.6s;--d:4.4s">
+  <h2 class="gs in">Tu WhatsApp responde solo, <em>24/7</em></h2>
+  <div class="price gs in" style="--i:2;margin-top:40px">$2,499</div>
+  <div class="cta in" style="--i:4;margin-top:40px"><span class="wa"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8 1 3.9.8a3.3 3.3 0 0 0 2.1-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg> 55 6780 7245</span></div>
+  <p class="foot">Safe Pixel · safepixels.com.mx</p>
+</section>
+</div><script>window.seek=t=>document.getAnimations().forEach(a=>{a.pause();a.currentTime=t*1000});</script></body></html>

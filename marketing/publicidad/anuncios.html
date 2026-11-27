@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Safe Pixel · Anuncios con trabajos reales</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono&family=Inter:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
+<style>
+  /* Anuncios 1080x1350 hechos con capturas reales. Elige con #pos, #portafolio, #compushop, #catem, #jm, #narvaza */
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1350px;background:#070707;color:#f2f2f2;font-family:Inter,sans-serif;overflow:hidden}
+  .ad{display:none;position:relative;width:1080px;height:1350px;padding:80px 72px 64px;flex-direction:column;gap:40px;overflow:hidden;
+      background:radial-gradient(ellipse at 50% 40%,#1e1e1e,#070707 70%)}
+  .ad.on{display:flex}
+  .grid-bg{position:absolute;inset:0;opacity:.12;background-image:linear-gradient(#ffffff22 2px,transparent 2px),linear-gradient(90deg,#ffffff22 2px,transparent 2px);background-size:90px 90px;pointer-events:none}
+  .top{display:flex;justify-content:space-between;align-items:center;position:relative}
+  .mono{font:400 24px "Space Mono";letter-spacing:.14em;color:#8c8c8c;text-transform:uppercase}
+  .brand{display:flex;align-items:center;gap:14px;font:700 32px "Space Grotesk"}
+  .logo{display:grid;grid-template-columns:repeat(2,14px);gap:4px}
+  .logo i{width:14px;height:14px;border-radius:3px;background:#fff}
+  .logo i:nth-child(2){background:#8c8c8c}.logo i:nth-child(3){background:#5c5c5c}.logo i:nth-child(4){background:#d4d4d4}
+  h1{font:700 86px/1 "Space Grotesk";letter-spacing:-.04em;color:#9a9a9a;position:relative}
+  h1 b{color:#fff} h1 em{font-family:Inter;font-style:italic;font-weight:600;color:#fff}
+  .sub{font-size:30px;color:#b5b5b5;margin-top:-18px;position:relative}
+  .stage{position:relative;flex:1;min-height:0}
+  /* Marco de navegador */
+  .browser{position:absolute;border-radius:18px;overflow:hidden;background:#111;border:2px solid #2c2c2c;box-shadow:0 40px 90px -30px #000,0 0 0 1px #ffffff10}
+  .browser .bar{height:38px;background:#161616;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid #262626}
+  .browser .bar i{width:12px;height:12px;border-radius:50%;background:#3a3a3a}
+  .browser .bar span{margin-left:12px;font:400 16px "Space Mono";color:#8c8c8c;background:#0c0c0c;padding:3px 14px;border-radius:20px}
+  .browser img{display:block;width:100%}
+  /* Marco de celular */
+  .phone{position:absolute;border-radius:46px;border:12px solid #1d1d1d;background:#000;overflow:hidden;box-shadow:0 40px 90px -20px #000,0 0 0 2px #333}
+  .phone img{display:block;width:100%}
+  .label{position:absolute;font:600 22px Inter;background:#f2f2f2;color:#070707;padding:8px 16px;border-radius:30px;white-space:nowrap}
+  .cta{position:relative;display:flex;justify-content:space-between;align-items:center;padding:30px 40px;border-radius:28px;background:#f2f2f2;color:#070707}
+  .cta b{font:700 38px "Space Grotesk";letter-spacing:-.02em}
+  .cta span{font:600 32px Inter}
+  .price{font:700 44px "Space Grotesk";color:#fff;position:relative}
+  .price small{font-size:24px;color:#8c8c8c;font-weight:500}
+  .chips{display:flex;gap:12px;flex-wrap:wrap;position:relative}
+  .chips span{padding:12px 22px;border:2px solid #333;border-radius:40px;font-size:24px;color:#d4d4d4;background:#0c0c0c}
+</style>
+</head>
+<body>
+
+<!-- 1 · Punto de venta (artifact del usuario) -->
+<section class="ad" id="pos"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Punto de venta</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Así se ve <em>tu</em> <b>punto de venta</b></h1>
+  <p class="sub">Cobra, controla tu caja y tu inventario desde la compu o el celular.</p>
+  <div class="stage">
+    <div class="browser" style="right:0;top:10px;width:820px"><div class="bar"><i></i><i></i><i></i><span>tu-negocio · Punto de venta</span></div><img src="capturas/pos-venta.png" alt=""></div>
+    <div class="phone" style="left:0;top:120px;width:250px;height:480px"><img src="capturas/pos-movil.png" alt=""></div>
+  </div>
+  <div class="chips"><span>Tickets y cortes de caja</span><span>Inventario con alertas</span><span>Reportes</span></div>
+  <div class="cta"><b>$5,999 MXN</b><span>Cotiza gratis · 55 6780 7245</span></div>
+</section>
+
+<!-- 2 · Portafolio con páginas reales -->
+<section class="ad" id="portafolio"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Trabajos reales</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Páginas que <em>ya</em> <b>están trabajando</b></h1>
+  <div class="stage">
+    <div class="browser" style="left:0;top:0;width:455px"><div class="bar"><i></i><i></i><i></i><span>catemtultitlam.com.mx</span></div><img src="capturas/catem-desktop.png" alt=""></div>
+    <div class="browser" style="right:0;top:0;width:455px"><div class="bar"><i></i><i></i><i></i><span>compushopmultiservicios.com</span></div><img src="capturas/compushop-desktop.png" alt=""></div>
+    <div class="browser" style="left:0;top:345px;width:455px"><div class="bar"><i></i><i></i><i></i><span>narvaza.com.mx</span></div><img src="capturas/narvaza-desktop.png" alt=""></div>
+    <div class="browser" style="right:0;top:345px;width:455px"><div class="bar"><i></i><i></i><i></i><span>Grúas y Madrinas JM</span></div><img src="capturas/mjm-desktop.png" alt=""></div>
+  </div>
+  <p class="price">Tu página web desde $1,999 <small>MXN</small></p>
+  <div class="cta"><b>¿Sigue tu negocio?</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+
+<!-- 3-6 · Un cliente por anuncio -->
+<section class="ad" id="compushop"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Caso real · Cómputo</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Hicimos la página de <b>Multiservicios Compushop</b></h1>
+  <div class="stage">
+    <div class="browser" style="left:0;top:20px;width:800px"><div class="bar"><i></i><i></i><i></i><span>compushopmultiservicios.com</span></div><img src="capturas/compushop-desktop.png" alt=""></div>
+    <div class="phone" style="right:0;top:170px;width:270px;height:560px"><img src="capturas/compushop-movil.png" alt=""></div>
+  </div>
+  <div class="chips"><span>Se ve perfecta en celular</span><span>Botón de WhatsApp</span><span>Servicios y contacto</span></div>
+  <div class="cta"><b>Tu página desde $1,999</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+
+<section class="ad" id="catem"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Caso real · Organización</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Hicimos la página de <b>CATEM Tultitlán</b></h1>
+  <div class="stage">
+    <div class="browser" style="left:0;top:20px;width:800px"><div class="bar"><i></i><i></i><i></i><span>catemtultitlam.com.mx</span></div><img src="capturas/catem-desktop.png" alt=""></div>
+    <div class="phone" style="right:0;top:170px;width:270px;height:560px"><img src="capturas/catem-movil.png" alt=""></div>
+  </div>
+  <div class="chips"><span>Imagen profesional</span><span>Noticias y servicios</span><span>Lista para celular</span></div>
+  <div class="cta"><b>Tu página desde $1,999</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+
+<section class="ad" id="jm"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Caso real · Grúas y traslados</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Hicimos la página de <b>Grúas y Madrinas JM</b></h1>
+  <div class="stage">
+    <div class="browser" style="left:0;top:20px;width:800px"><div class="bar"><i></i><i></i><i></i><span>Grúas y Madrinas JM</span></div><img src="capturas/mjm-desktop.png" alt=""></div>
+    <div class="phone" style="right:0;top:170px;width:270px;height:560px"><img src="capturas/mjm-movil.png" alt=""></div>
+  </div>
+  <div class="chips"><span>Cotización en un clic</span><span>Galería de trabajos</span><span>Rutas y servicios</span></div>
+  <div class="cta"><b>Tu página desde $1,999</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+
+<section class="ad" id="narvaza"><div class="grid-bg"></div>
+  <div class="top"><span class="mono">// Caso real · Logística</span><span class="brand"><span class="logo"><i></i><i></i><i></i><i></i></span>Safe Pixel</span></div>
+  <h1>Hicimos la página de <b>Transportes Narvaza</b></h1>
+  <div class="stage">
+    <div class="browser" style="left:0;top:20px;width:800px"><div class="bar"><i></i><i></i><i></i><span>narvaza.com.mx</span></div><img src="capturas/narvaza-desktop.png" alt=""></div>
+    <div class="phone" style="right:0;top:170px;width:270px;height:560px"><img src="capturas/narvaza-movil.png" alt=""></div>
+  </div>
+  <div class="chips"><span>Sitio corporativo</span><span>Flota y certificaciones</span><span>Cotizaciones en línea</span></div>
+  <div class="cta"><b>Tu página desde $1,999</b><span>WhatsApp 55 6780 7245</span></div>
+</section>
+
+<script>document.getElementById(location.hash.slice(1)||'pos').classList.add('on')</script>
+</body>
+</html>
