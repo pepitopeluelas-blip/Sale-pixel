@@ -20,3 +20,8 @@ Horarios diarios de imágenes y reels con música: 9:30 imagen · 11:30 reel · 
 | 2026-12-04 | 19:30 | Imagen | Clientes que confían en Safe Pixel | marketing/facebook/post-2-portafolio.png |
 | 2026-11-27 | 11:30 | Imagen | 3 cosas que debe tener la página de tu negocio | marketing/contenido/2026-11-27-a.png |
 | 2026-11-27 | 17:00 | Reel | ¿Cuánto cuesta una página web? $1,999 | marketing/contenido/2026-11-27-reel.mp4 |
+| 2026-11-28 | 11:30 | Reel animado | Lanzamiento estilo espacio: "Tu negocio merece despegar" | marketing/video/lanzamientos/v1-espacio.mp4 |
+| 2026-11-29 | 11:30 | Reel animado | Estilo pastel: "Publica. Vende. Crece." | marketing/video/lanzamientos/v2-pastel.mp4 |
+| 2026-11-30 | 11:30 | Reel animado | Estilo interfaz: "Stop. Deja la libreta" (punto de venta real) | marketing/video/lanzamientos/v3-interfaz.mp4 |
+| 2026-12-01 | 11:30 | Reel animado | Estilo morado: chatbot de WhatsApp 24/7 | marketing/video/lanzamientos/v4-morado.mp4 |
+| 2026-12-02 | 11:30 | Reel animado | Estilo cielo/menta: menú digital y pedidos por WhatsApp | marketing/video/lanzamientos/v5-cielo.mp4 |
