@@ -1,6 +1,6 @@
 # Registro de imágenes y reels con música
 
-Las publicaciones de 9:30 (imagen) y 19:30 (reel con música) de cada día. Los videos con voz del mediodía están en `marketing/video/diarios/registro.md`.
+Horarios diarios de imágenes y reels con música: 9:30 imagen · 11:30 reel · 17:00 imagen · 19:30 reel. El video con voz sale entre 13:00 y 15:30. Los videos con voz del mediodía están en `marketing/video/diarios/registro.md`.
 
 | Fecha | Hora | Tipo | Tema | Archivo |
 |---|---|---|---|---|
@@ -18,3 +18,5 @@ Las publicaciones de 9:30 (imagen) y 19:30 (reel con música) de cada día. Los 
 | 2026-12-03 | 19:30 | Imagen | Caso real Grúas y Madrinas JM | marketing/publicidad/5-jm.png |
 | 2026-12-04 | 09:30 | Imagen | Caso real Transportes Narvaza | marketing/publicidad/6-narvaza.png |
 | 2026-12-04 | 19:30 | Imagen | Clientes que confían en Safe Pixel | marketing/facebook/post-2-portafolio.png |
+| 2026-11-27 | 11:30 | Imagen | 3 cosas que debe tener la página de tu negocio | marketing/contenido/2026-11-27-a.png |
+| 2026-11-27 | 17:00 | Reel | ¿Cuánto cuesta una página web? $1,999 | marketing/contenido/2026-11-27-reel.mp4 |
