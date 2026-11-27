@@ -2,7 +2,7 @@
 
 Voz generada con Piper (voz `es_MX-claude-high`, español de México, licencia libre). "Safe Pixel" se escribe "Séif Píxel" en el guion para que la voz lo pronuncie bien.
 
-## Video historia (, 45 s)
+## Video historia (`safe-pixel-historia.mp4`, 45 s)
 
 | Segundo | Frase |
 |---|---|
@@ -17,7 +17,7 @@ Voz generada con Piper (voz `es_MX-claude-high`, español de México, licencia l
 | 36–40 | Tu página, desde mil novecientos noventa y nueve. |
 | 40–45 | Cotiza gratis con Séif Píxel. Escríbenos por WhatsApp. |
 
-## Video corto (, 26 s)
+## Video corto (`safe-pixel-promo.mp4`, 26 s)
 
 | Segundo | Frase |
 |---|---|
